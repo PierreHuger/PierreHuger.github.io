@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'LoraRegular';
+    src: url('./Fonts/Lora/static/Lora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MerryWeather';
+    src: url(./Fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: 0px;
+    font-family: 'MerryWeather', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/**************Header**************/
+header {
+    background-color: #00314F;
+    width: 100%;
+    height: 5em;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 2em;
+    font-size: large;
+}
+
+
+header a:hover,
+header a:focus,
+#Accueil header a.accueil,
+#Competences header a.competences {
+    color: #AF334C;
+}
+
+
+nav {
+    margin: auto;
+}
+
+
+
+/**********Page d'accueil***********/
+
+
+/***************Main***************/
+
+/**************Article à propos**************/
+
+.accueil h1 {
+    margin: 2em 0 0 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/**Image de mon personnage**/
+.accueil img#character {
+    width: 15em;
+    height: 20em;
+    z-index: 1;
+    position: relative;
+    bottom: -12em;
+    left: 7.5em;
+}
+
+/**Articles**/
+.accueil article {
+    position: relative;
+}
+
+.accueil section>article:first-child p {
+    width: 50%;
+    margin: 0 0 0 0;
+}
+
+
+/**************Formes**************/
+
+/**Forme verte**/
+.accueil article#propos>div:first-of-type {
+    position: absolute;
+    top: -48em;
+    width: 40em;
+    height: 145.1em;
+    background-color: #88CC63;
+    /*2B8AC4*/
+    /*Bleu a garder*/
+    opacity: 20%;
+    border-radius: 65% 0% 100% 73% / 63% 100% 0% 100%;
+    transform: rotate(90deg);
+}
+
+/**Forme rouge**/
+.accueil div#FG {
+    position: absolute;
+    right: -15em;
+    top: -3em;
+    width: 30em;
+    height: 30em;
+    background-color: #AF334C;
+    border-radius: 49% 51% 81% 19% / 67% 68% 32% 33%;
+    transform: rotate(55deg);
+
+}
+
+
+/**Texte à propos page d'accueil**/
+.accueil article#propos>p {
+    position: relative;
+    left: 28em;
+    bottom: 9em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+
+/**Lien cliquable sur les boutons**/
+.accueil article:first-of-type>a#CV {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4em;
+}
+
+
+/**Boutons**/
+.accueil button {
+    width: 12em;
+    height: 3em;
+    background-color: #00314F;
+    color: white;
+    border-radius: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/**************Compétences sur la page d'accueil**************/
+
+/**Mise en lignes des différentes compétences**/
+.accueil section>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.accueil section>div>article {
+    width: 20em;
+    height: 10em;
+    box-shadow: 2px 3px 8px -4px #5f5f5f7d;
+    border-radius: 32px;
+    margin: 1.5em 2em;
+    text-align: center;
+    padding: 2em;
+}
+
+.accueil section#competences button {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h2 {
+    text-align: center;
+    margin: 1.5em 0 1em 0;
+    font-size: 2em;
+}
+
+/**************Footer*************/
+
+/*************Contacts*************/
+
+/**Icones contacts**/
+img {
+    width: 2em;
+}
+
+
+article#contacts {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #00314F;
+    width: 100%;
+    height: 14em;
+    margin-top: 2em;
+    margin-bottom: -2em;
+}
+
+article#contacts ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 20px 0;
+}
+
+article#contacts div,
+article#contacts div#Reseau>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+article#contacts ul li p {
+    margin-left: 11px;
+    font-size: 20px;
+    width: 20em;
+    color: white
+}
+
+article#contacts div#copyright {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white
+}
+
+article#contacts div#copyright>p {
+    width: auto;
+}
+
+article#contacts div#Reseaux ul {
+    padding: 0;
+    margin-left: 6em;
+}
+
+article#contacts img {
+    filter: invert(99%) sepia(46%) saturate(2%) hue-rotate(284deg) brightness(116%) contrast(100%);
+}
+
+/*****************FIN*****************/
