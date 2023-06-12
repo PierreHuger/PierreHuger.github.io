@@ -191,31 +191,59 @@ button {
     display: flex;
 }
 
+#C1 article>div {
+    position: relative;
+}
+
 #C1 article p {
     width: 90%;
     margin: 0 0 20px 3em;
 }
 
+
+/**Vise le premier p des articles**/
 #C1 article p:first-child {
     margin-top: 3em;
 }
 
-#C1 article img {
+/**Article impair**/
+#C1 main article:nth-child(odd) img {
     width: 29em;
     height: 27em;
-    margin-right: 4em;
+
 }
 
+/**Article pair**/
+#C1 main article:nth-child(even) img {
+    width: 29em;
+    height: 27em;
+}
+
+#C1 div.exemple p {
+    width: 100%;
+    margin: 1em 0 0 0;
+}
+
+#C1 article:nth-child(even) div.exemple {
+    margin-right: 4em;
+    text-align: center;
+}
+
+#C1 article:nth-child(odd) div.exemple {
+    margin-left: 4em;
+    text-align: center;
+}
+
+/**Boutons**/
 #C1 button {
     width: 17em;
     height: 3em;
-
 }
 
 #C1 a.boutons {
     position: absolute;
-    left: 24%;
-    bottom: 2.5em;
+    left: 41%;
+    bottom: 5.5em;
 }
 
 /**Trait de séparation entre les compétences**/
