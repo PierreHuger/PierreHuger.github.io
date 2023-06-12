@@ -59,7 +59,7 @@ nav {
 
 /**************Article à propos**************/
 
-.accueil h1 {
+h1 {
     margin: 2em 0 0 0;
     font-size: 2.5em;
     text-align: center;
@@ -136,14 +136,17 @@ nav {
 
 
 /**Boutons**/
-.accueil button {
-    width: 12em;
-    height: 3em;
+button {
     background-color: #00314F;
     color: white;
     border-radius: 33px;
     border: none;
     cursor: pointer;
+}
+
+.accueil button {
+    width: 12em;
+    height: 3em;
 }
 
 
@@ -173,7 +176,7 @@ nav {
     transform: translate(-50%);
 }
 
-h2 {
+.accueil h2 {
     text-align: center;
     margin: 1.5em 0 1em 0;
     font-size: 2em;
@@ -183,7 +186,61 @@ h2 {
 
 /*************Compétences*************/
 
+/**Bloc des différents projets**/
+#C1 article {
+    display: flex;
+}
 
+#C1 article p {
+    width: 90%;
+    margin: 0 0 20px 3em;
+}
+
+#C1 article p:first-child {
+    margin-top: 3em;
+}
+
+#C1 article img {
+    width: 29em;
+    height: 27em;
+    margin-right: 4em;
+}
+
+#C1 button {
+    width: 17em;
+    height: 3em;
+
+}
+
+#C1 a.boutons {
+    position: absolute;
+    left: 24%;
+    bottom: 2.5em;
+}
+
+/**Trait de séparation entre les compétences**/
+#C1 div.trait {
+    display: flex;
+    justify-content: center;
+    background-color: #00314F;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    margin: 1.25em 0;
+}
+
+/*Texte à coté du trait de séparation*/
+
+#C1 div.trait>h2 {
+    background-color: white;
+    padding: 0 20px;
+    position: absolute;
+    bottom: -31px;
+}
+
+#C1 div.trait {
+    margin: 5em 0 3em 0;
+}
 
 /******************FIN PAGE COMPETENCES******************/
 
@@ -193,7 +250,7 @@ h2 {
 /*************Contacts*************/
 
 /**Icones contacts**/
-img {
+section#contacts img {
     width: 2em;
 }
 
