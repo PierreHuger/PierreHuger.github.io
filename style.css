@@ -92,6 +92,7 @@ h1 {
 .accueil article#propos>div:first-of-type {
     position: absolute;
     top: -48em;
+    left: 3em;
     width: 40em;
     height: 145.1em;
     background-color: #88CC63;
