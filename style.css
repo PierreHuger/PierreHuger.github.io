@@ -156,17 +156,10 @@ button {
 /**Mise en lignes des différentes compétences**/
 .accueil section>div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.accueil section>div>article {
-    width: 20em;
-    height: 10em;
-    box-shadow: 2px 3px 8px -4px #5f5f5f7d;
-    border-radius: 32px;
-    margin: 2em 0 1em 3em;
-    text-align: center;
-    padding: 2em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 7em;
 }
 
 .accueil section#competences button {
@@ -176,6 +169,55 @@ button {
     transform: translate(-50%);
 }
 
+.accueil section>div>article {
+    width: 30em;
+    height: 30em;
+    box-shadow: 2px 3px 8px -4px #5f5f5f7d;
+    border-radius: 32px;
+    text-align: center;
+    padding: 2em;
+    background-color: #0000000a;
+}
+
+.accueil div>article>div {
+    display: flex;
+    align-items: center;
+}
+
+.accueil div>article>div img {
+    width: 15em;
+    height: 15em;
+    margin-right: 4em;
+}
+
+.accueil div>article>div img.CB {
+    width: 16em;
+    height: 4em;
+    margin-right: 4em;
+}
+
+.accueil div>article>div img#BDD {
+    width: 16em;
+    height: 9em;
+    margin-right: 4em;
+}
+
+.accueil h3+div div {
+    text-align: start;
+    margin-left: -2em;
+    line-height: 26px;
+}
+
+.accueil div.comp>div {
+    width: 19em;
+    margin-left: 1em;
+}
+
+.accueil div.comp {
+    margin-bottom: 1em;
+    align-items: start;
+}
+
 .accueil h2 {
     text-align: center;
     margin: 1.5em 0 1em 0;
@@ -183,95 +225,6 @@ button {
 }
 
 /******************FIN PAGE D'ACCUEIL******************/
-
-/*************Compétences*************/
-
-/**Bloc des différents projets**/
-#C1 article {
-    display: flex;
-}
-
-#C1 article>div {
-    position: relative;
-}
-
-#C1 article p {
-    width: 90%;
-    margin: 0 0 20px 3em;
-}
-
-
-/**Vise le premier p des articles**/
-#C1 article p:first-child {
-    margin-top: 3em;
-}
-
-/**Article impair**/
-#C1 main article:nth-child(odd) img {
-    width: 29em;
-    height: 27em;
-
-}
-
-/**Article pair**/
-#C1 main article:nth-child(even) img {
-    width: 29em;
-    height: 27em;
-}
-
-#C1 div.exemple p {
-    width: 100%;
-    margin: 1em 0 0 0;
-}
-
-#C1 article:nth-child(even) div.exemple {
-    margin-right: 4em;
-    text-align: center;
-}
-
-#C1 article:nth-child(odd) div.exemple {
-    margin-left: 4em;
-    text-align: center;
-}
-
-/**Boutons**/
-#C1 button {
-    width: 17em;
-    height: 3em;
-}
-
-#C1 a.boutons {
-    position: absolute;
-    left: 41%;
-    bottom: 5.5em;
-}
-
-/**Trait de séparation entre les compétences**/
-#C1 div.trait {
-    display: flex;
-    justify-content: center;
-    background-color: #00314F;
-    position: relative;
-    width: 100%;
-    height: 3px;
-    margin: 1.25em 0;
-}
-
-/*Texte à coté du trait de séparation*/
-
-#C1 div.trait>h2 {
-    background-color: white;
-    padding: 0 20px;
-    position: absolute;
-    bottom: -31px;
-}
-
-#C1 div.trait {
-    margin: 5em 0 3em 0;
-}
-
-/******************FIN PAGE COMPETENCES******************/
-
 
 /**************Footer*************/
 
