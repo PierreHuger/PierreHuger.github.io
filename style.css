@@ -116,6 +116,11 @@ h1 {
 
 }
 
+.accueil p#Lien>a {
+    text-decoration: underline;
+    color: #AF334C;
+}
+
 
 /**Texte à propos page d'accueil**/
 .accueil article#propos>p {
